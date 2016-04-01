@@ -37,7 +37,7 @@ public class Application implements CommandLineRunner {
   private Storage db;
 
   public static void main(String args[]) {
-    SpringApplication.run(Application.class);
+    SpringApplication.run(Application.class).close();
   }
 
   @Override
